@@ -15,7 +15,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // Renderizar una plantilla de vista
-app.get('', (req, res) => res.render('index'));
+app.get('/', (req, res) => res.render('index'));
 
 // Creando ruta de pago que recibirá el formulario enviado
 app.post('/pay', (req, res) => {
